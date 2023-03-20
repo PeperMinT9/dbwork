@@ -1,5 +1,5 @@
--- PLSQL ¿¬½À¿ë Å×ÀÌºí°ú ¿¬½À¿ë ½ÃÄý½º »ý¼º
-CREATE SEQUENCE SEQ_TEST NOCACHE; -- 1ºÎÅÍ Áõ°¡ÇÏ´Â ½ÃÄý½º
+-- PLSQL ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+CREATE SEQUENCE SEQ_TEST NOCACHE; -- 1ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 CREATE TABLE SHOP (
     NUM NUMBER(3) CONSTRAINT SHOP_PK_NUM PRIMARY KEY,
     SANGPUM VARCHAR2(30),
@@ -11,56 +11,58 @@ CREATE TABLE SHOP (
 --DROP SEQUENCE SEQ_TEST;
 --DROP TABLE SHOP;
 
--- ±âº» µ¥ÀÌÅÍ 5°³
-INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, 'Ã»¹ÙÁö', 2, 19000, SYSDATE);
-INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, 'Åë¹ÙÁö', 1, 21000, SYSDATE);
-INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, '¼Ø¹ÙÁö', 1, 23000, SYSDATE);
-INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, '°ã¹ÙÁö', 3, 27000, SYSDATE);
-INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, '¸é¹ÙÁö', 2, 32000, SYSDATE);
+-- ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 5ï¿½ï¿½
+INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, 'Ã»ï¿½ï¿½ï¿½ï¿½', 2, 19000, SYSDATE);
+INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, 'ï¿½ï¿½ï¿½ï¿½ï¿½', 1, 21000, SYSDATE);
+INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, 'ï¿½Ø¹ï¿½ï¿½ï¿½', 1, 23000, SYSDATE);
+INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, 'ï¿½ï¿½ï¿½ï¿½ï¿½', 3, 27000, SYSDATE);
+INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, 'ï¿½ï¿½ï¿½ï¿½ï¿½', 2, 32000, SYSDATE);
 COMMIT;
 
--- PL-SQL: SQL ¾ð¾î¿¡ ÀýÂ÷Àû ¿ä¼Ò¸¦ Ãß°¡ÇØ¼­ ÇÁ·Î±×·¡¹ÖÇÑ°ÍÀ» PL SQL ÀÌ¶ó°í ÇÑ´Ù
--- Çü½Ä
+
+
+-- PL-SQL: SQL ï¿½ï¿½î¿¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ò¸ï¿½ ï¿½ß°ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ï¿½Ñ°ï¿½ï¿½ï¿½ PL SQL ï¿½Ì¶ï¿½ï¿½ ï¿½Ñ´ï¿½
+-- ï¿½ï¿½ï¿½ï¿½
 -- DECLARE
--- º¯¼ö¼±¾ð, Ä¿¼­¼±¾ð
+-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 -- BEGIN
--- °¢Á¾ Ãâ·Â ¶Ç´Â ·ÎÁ÷µé
--- DBMS_OUT.PUT_PUT_LINE(); ÇÑÁÙÃâ·Â ¸í·É¾î
+-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ç´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+-- DBMS_OUT.PUT_PUT_LINE(); ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½É¾ï¿½
 -- END;
 
--- SET SERVEROUTPUT ON ÄÜ¼ÖÃ¢¿¡ °á°ú°ª ³ª¿À°ÔÇÏ±â
--- SET SERVEROUTPUT OFF ÄÜ¼ÖÃ¢¿¡ °á°ú°ª ¾È³ª¿À°Ô
+-- SET SERVEROUTPUT ON ï¿½Ü¼ï¿½Ã¢ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
+-- SET SERVEROUTPUT OFF ï¿½Ü¼ï¿½Ã¢ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½
 SET SERVEROUTPUT OFF
 
 DECLARE
-    V_NO NUMBER(4, 1); -- 4ÀÚ¸® ¼ýÀÚ, ¼Ò¼ýÁ¡ÀÌÇÏ 1ÀÚ¸®
+    V_NO NUMBER(4, 1); -- 4ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1ï¿½Ú¸ï¿½
 BEGIN
     V_NO := 10;
-    DBMS_OUTPUT.PUT_LINE('¼ýÀÚ´Â'||V_NO||'ÀÔ´Ï´Ù'); 
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ï¿½Ú´ï¿½'||V_NO||'ï¿½Ô´Ï´ï¿½'); 
 END;
  
--- SHOP Å×ÀÌºí¿¡¼­ Æ¯Á¤ »óÇ°Á¤º¸ ¾ò¾î¿À±â
+-- SHOP ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 DECLARE
     V_SNAGPUM VARCHAR2(30);
     V_SANGPUM VARCHAR2(30);
     V_SU NUMBER(3);
     V_DAN NUMBER(7);
-    V_NUM NUMBER(3) := 3; -- °Ë»öÇØ¼­ °¡Á®¿Ã NUM°ª
+    V_NUM NUMBER(3) := 3; -- ï¿½Ë»ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ NUMï¿½ï¿½
 BEGIN
     SELECT SANGPUM, SU, DAN 
     INTO V_SANGPUM, V_SU, V_DAN
     FROM SHOP WHERE NUM = V_NUM;
-    DBMS_OUTPUT.PUT_LINE(V_NUM||'¹ø »óÇ°¼³¸í');
-    DBMS_OUTPUT.PUT_LINE('»óÇ°¸í: '||V_SANGPUM);
-    DBMS_OUTPUT.PUT_LINE('¼ö ·®: '||V_SU);
-    DBMS_OUTPUT.PUT_LINE('´Ü °¡: '||V_DAN);
-    DBMS_OUTPUT.PUT_LINE('ÃÑ±Ý¾×: '||V_SU * V_DAN);
+    DBMS_OUTPUT.PUT_LINE(V_NUM||'ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½');
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½Ç°ï¿½ï¿½: '||V_SANGPUM);
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ ï¿½ï¿½: '||V_SU);
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ ï¿½ï¿½: '||V_DAN);
+    DBMS_OUTPUT.PUT_LINE('ï¿½Ñ±Ý¾ï¿½: '||V_SU * V_DAN);
 END;
 /
 
--- SHOP Å×ÀÌºí¿¡¼­ Æ¯Á¤ »óÇ°Á¤º¸ ¾ò¾î¿À±â
+-- SHOP ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 DECLARE
-    V_SANGPUM VARCHAR2(30) := 'Ã»¹ÙÁö'; -- °Ë»öÇØ¼­ °¡Á®¿Ã SANGPUM°ª
+    V_SANGPUM VARCHAR2(30) := 'Ã»ï¿½ï¿½ï¿½ï¿½'; -- ï¿½Ë»ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ SANGPUMï¿½ï¿½
     V_SU NUMBER(3);
     V_DAN NUMBER(7);
     V_NUM NUMBER(3); 
@@ -68,87 +70,87 @@ BEGIN
     SELECT NUM, SU, DAN
     INTO V_NUM, V_SU, V_DAN
     FROM SHOP WHERE SANGPUM = V_SANGPUM;
-    DBMS_OUTPUT.PUT_LINE(V_SANGPUM||'»óÇ°¼³¸í');
-    DBMS_OUTPUT.PUT_LINE('½ÃÄý½º°ª: '||V_NUM);
-    DBMS_OUTPUT.PUT_LINE('¼ö ·®: '||V_SU);
-    DBMS_OUTPUT.PUT_LINE('´Ü °¡: '||V_DAN);
-    DBMS_OUTPUT.PUT_LINE('ÃÑ±Ý¾×: '||V_SU * V_DAN);
+    DBMS_OUTPUT.PUT_LINE(V_SANGPUM||'ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½');
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: '||V_NUM);
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ ï¿½ï¿½: '||V_SU);
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ ï¿½ï¿½: '||V_DAN);
+    DBMS_OUTPUT.PUT_LINE('ï¿½Ñ±Ý¾ï¿½: '||V_SU * V_DAN);
 END;
 /
 
--- Á¶°Ç¹®
+-- ï¿½ï¿½ï¿½Ç¹ï¿½
 /*
-´ÜÀÏ Á¶°Ç¹®
-    IF Á¶°Ç½Ä THEN
-        ¹®Àå1;
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ç¹ï¿½
+    IF ï¿½ï¿½ï¿½Ç½ï¿½ THEN
+        ï¿½ï¿½ï¿½ï¿½1;
     ELSE
-        ¹®Àå2;
+        ï¿½ï¿½ï¿½ï¿½2;
     END IF;
     
-´ÙÁßÁ¶°Ç¹®
-    IF Á¶°Ç½Ä1 THEN
-        ¹®Àå1;
-    ELSIF Á¶°Ç½Ä2 THEN
-        ¹®Àå2;
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¹ï¿½
+    IF ï¿½ï¿½ï¿½Ç½ï¿½1 THEN
+        ï¿½ï¿½ï¿½ï¿½1;
+    ELSIF ï¿½ï¿½ï¿½Ç½ï¿½2 THEN
+        ï¿½ï¿½ï¿½ï¿½2;
     .......
     END IF;
 */
 
--- Æ¯Á¤³âµµ°¡ ¹«½¼¶ìÀÎÁö ±¸ÇÐ
--- ³âµµ¸¦ Å°º¸µå·Î ÀÔ·Â¹Þ¾Æ¼­ ¶ì¸¦ ¾Ë¾Æº¼¼ö ÀÖµµ·Ï ¼öÁ¤ÇÏ±â
-ACCEPT K_YEAR PROMPT '¿¬µµ 4ÀÚ¸®¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä';
+-- Æ¯ï¿½ï¿½ï¿½âµµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+-- ï¿½âµµï¿½ï¿½ Å°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â¹Þ¾Æ¼ï¿½ ï¿½ì¸¦ ï¿½Ë¾Æºï¿½ï¿½ï¿½ ï¿½Öµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
+ACCEPT K_YEAR PROMPT 'ï¿½ï¿½ï¿½ï¿½ 4ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½';
 DECLARE
     V_YEAR NUMBER(4) := 2023;
-    V_MOD NUMBER(2) := MOD(V_YEAR, 12); -- ³âµµ¸¦ 12·Î ³ª´« ³ª¸ÓÁö
-    V_DDI VARCHAR2(10); -- ¶ì¸¦ ±¸ÇØ¼­ ÀúÀå
+    V_MOD NUMBER(2) := MOD(V_YEAR, 12); -- ï¿½âµµï¿½ï¿½ 12ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    V_DDI VARCHAR2(10); -- ï¿½ì¸¦ ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½
 BEGIN
-    IF V_MOD = 0 THEN V_DDI := '¿ø¼þÀÌ';
-    ELSIF V_MOD = 1 THEN V_DDI := '´ß';
-    ELSIF V_MOD = 2 THEN V_DDI := '°³';
-    ELSIF V_MOD = 3 THEN V_DDI := 'µÅÁö';
-    ELSIF V_MOD = 4 THEN V_DDI := 'Áã';
-    ELSIF V_MOD= 5 THEN V_DDI := '¼Ò';
-    ELSIF V_MOD = 6 THEN V_DDI := 'È£¶ûÀÌ';
-    ELSIF V_MOD = 7 THEN V_DDI := 'Åä³¢';
-    ELSIF V_MOD = 8 THEN V_DDI := '¿ë';
-    ELSIF V_MOD = 9 THEN V_DDI := '¹ì';
-    ELSIF V_MOD = 10 THEN V_DDI := '¸»';
-    ELSIF V_MOD = 11 THEN V_DDI := '¾ç';
+    IF V_MOD = 0 THEN V_DDI := 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½';
+    ELSIF V_MOD = 1 THEN V_DDI := 'ï¿½ï¿½';
+    ELSIF V_MOD = 2 THEN V_DDI := 'ï¿½ï¿½';
+    ELSIF V_MOD = 3 THEN V_DDI := 'ï¿½ï¿½ï¿½ï¿½';
+    ELSIF V_MOD = 4 THEN V_DDI := 'ï¿½ï¿½';
+    ELSIF V_MOD= 5 THEN V_DDI := 'ï¿½ï¿½';
+    ELSIF V_MOD = 6 THEN V_DDI := 'È£ï¿½ï¿½ï¿½ï¿½';
+    ELSIF V_MOD = 7 THEN V_DDI := 'ï¿½ä³¢';
+    ELSIF V_MOD = 8 THEN V_DDI := 'ï¿½ï¿½';
+    ELSIF V_MOD = 9 THEN V_DDI := 'ï¿½ï¿½';
+    ELSIF V_MOD = 10 THEN V_DDI := 'ï¿½ï¿½';
+    ELSIF V_MOD = 11 THEN V_DDI := 'ï¿½ï¿½';
     END IF;
     
-    DBMS_OUTPUT.PUT_LINE(V_YEAR||'³â »ýÀº'||V_DDI||'ÀÔ´Ï´Ù'); 
+    DBMS_OUTPUT.PUT_LINE(V_YEAR||'ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½'||V_DDI||'ï¿½Ô´Ï´ï¿½'); 
 END;
 /
 
--- ¼ýÀÚ¸¦ ÀÔ·Â¹Þ¾Æ 12ÀÔ·Â½Ã 12´Â Â¦¼öÀÔ³ª´Ù, 11ÀÔ·Â½Ã 11Àº È¦¼öÀÔ´Ï´Ù Ãâ·Â
-ACCEPT k_SU PROMPT 'Á¤¼ö 4ÀÚ¸® ÀÌÇÏ ÀÔ·Â';
+-- ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·Â¹Þ¾ï¿½ 12ï¿½Ô·Â½ï¿½ 12ï¿½ï¿½ Â¦ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½, 11ï¿½Ô·Â½ï¿½ 11ï¿½ï¿½ È¦ï¿½ï¿½ï¿½Ô´Ï´ï¿½ ï¿½ï¿½ï¿½
+ACCEPT k_SU PROMPT 'ï¿½ï¿½ï¿½ï¿½ 4ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½';
 DECLARE
     V_SU NUMBER(10) := '&K_SU';
-    V_RES VARCHAR2(10) := 'Â¦¼ö';
+    V_RES VARCHAR2(10) := 'Â¦ï¿½ï¿½';
 BEGIN
-    IF MOD(V_SU, 2) = 1 THEN V_RES := 'È¦¼ö';
-    ELSE V_RES := 'Â¦¼ö';
+    IF MOD(V_SU, 2) = 1 THEN V_RES := 'È¦ï¿½ï¿½';
+    ELSE V_RES := 'Â¦ï¿½ï¿½';
     
     END IF;
     
-    DBMS_OUTPUT.PUT_LINE(V_SU||'Àº '||V_RES||'ÀÔ´Ï´Ù'); 
+    DBMS_OUTPUT.PUT_LINE(V_SU||'ï¿½ï¿½ '||V_RES||'ï¿½Ô´Ï´ï¿½'); 
 END;
 /
 
 /*
-    ¹Ýº¹¹®
+    ï¿½Ýºï¿½ï¿½ï¿½
     LOOP
-        ¸í·Éµé;
-        EXIT WITH Á¶°Ç;
+        ï¿½ï¿½ï¿½Éµï¿½;
+        EXIT WITH ï¿½ï¿½ï¿½ï¿½;
     END LOOP
 */
 
-ACCEPT k_DAN PROMPT '±¸±¸´Ü ¼ýÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä';
+ACCEPT k_DAN PROMPT 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½';
 DECLARE
     V_DAN NUMBER(3) := '&K_DAN';
     V_IDX NUMBER(1) := 1;
 BEGIN
-    DBMS_OUTPUT.PUT_LINE('** ['||V_DAN||'´Ü] **');
+    DBMS_OUTPUT.PUT_LINE('** ['||V_DAN||'ï¿½ï¿½] **');
     
     LOOP
         DBMS_OUTPUT.PUT_LINE(V_DAN||' X '||V_IDX||' = '||V_DAN * V_IDX);
@@ -159,14 +161,14 @@ END;
 /
 
 /*
-    ¶Ç ´Ù¸¥ Á¶°Ç¹® CASE
+    ï¿½ï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½Ç¹ï¿½ CASE
     
-    º¯¼ö :=
-        CASE Ç¥Çö½Ä
-            WHEN °ª1 THEN °á°ú1
-            WHEN °ª2 THEN °á°ú2
-            WHEN °ª3 THEN °á°ú3
-            ELSE °á°ú4
+    ï¿½ï¿½ï¿½ï¿½ :=
+        CASE Ç¥ï¿½ï¿½ï¿½ï¿½
+            WHEN ï¿½ï¿½1 THEN ï¿½ï¿½ï¿½1
+            WHEN ï¿½ï¿½2 THEN ï¿½ï¿½ï¿½2
+            WHEN ï¿½ï¿½3 THEN ï¿½ï¿½ï¿½3
+            ELSE ï¿½ï¿½ï¿½4
         END;
 */
 
@@ -181,13 +183,13 @@ BEGIN
             WHEN 'C' THEN 'GOOD!!'
             ELSE 'TRY!!'
         END;
-        DBMS_OUTPUT.PUT_LINE(V_GRADE||'ÇÐÁ¡Àº '||V_MSG);
+        DBMS_OUTPUT.PUT_LINE(V_GRADE||'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ '||V_MSG);
 END;
 /
 
-ACCEPT K_SANGPUM PROMPT '°¡Á®¿Ã »óÇ°¸í ¹Þ¾Æ¿À±â';
+ACCEPT K_SANGPUM PROMPT 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½Þ¾Æ¿ï¿½ï¿½ï¿½';
 DECLARE
-    V_SANGPUM VARCHAR2(30) := '&K_SANGPUM'; -- Å°º¸µå ÀÔ·Â½Ã °¡Á®¿Ã »óÇ°¸í
+    V_SANGPUM VARCHAR2(30) := '&K_SANGPUM'; -- Å°ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½
     V_SU NUMBER(3);
     V_DAN NUMBER(7);
     V_NUM NUMBER(3); 
@@ -195,39 +197,39 @@ BEGIN
     SELECT NUM, SU, DAN
     INTO V_NUM, V_SU, V_DAN
     FROM SHOP WHERE SANGPUM = V_SANGPUM;
-    DBMS_OUTPUT.PUT_LINE(V_SANGPUM||'»óÇ°¼³¸í');
-    DBMS_OUTPUT.PUT_LINE('½ÃÄý½º°ª: '||V_NUM);
-    DBMS_OUTPUT.PUT_LINE('¼ö ·®: '||V_SU);
-    DBMS_OUTPUT.PUT_LINE('´Ü °¡: '||V_DAN);
-    DBMS_OUTPUT.PUT_LINE('ÃÑ±Ý¾×: '||V_SU * V_DAN);
+    DBMS_OUTPUT.PUT_LINE(V_SANGPUM||'ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½');
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: '||V_NUM);
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ ï¿½ï¿½: '||V_SU);
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ ï¿½ï¿½: '||V_DAN);
+    DBMS_OUTPUT.PUT_LINE('ï¿½Ñ±Ý¾ï¿½: '||V_SU * V_DAN);
     
-    -- ¿À¶óÅ¬¿¡¼­ ¿¹¿Ü Ã³¸®ÇÏ´Â ¹æ¹ý
+    -- ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½
     EXCEPTION
         WHEN NO_DATA_FOUND THEN
-            DBMS_OUTPUT.PUT_LINE(V_SANGPUM||' »óÇ°Àº DB¿¡ ¾ø½À´Ï´Ù!');
+            DBMS_OUTPUT.PUT_LINE(V_SANGPUM||' ï¿½ï¿½Ç°ï¿½ï¿½ DBï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½!');
         WHEN OTHERS THEN
-            DBMS_OUTPUT.PUT_LINE('¿¹¿Ü ¹ß»ý!');
+            DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½!');
 END;
 /
 
--- SHOP Å×ÀÌºí ¼öÁ¤
--- SHOP Å×ÀÌºí¿¡ COLOR ÄÃ·³À» Ãß°¡ÇÏ°í ±âº»»öÀ» 'GREEN'
+-- SHOP ï¿½ï¿½ï¿½Ìºï¿½ ï¿½ï¿½ï¿½ï¿½
+-- SHOP ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ COLOR ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ï°ï¿½ ï¿½âº»ï¿½ï¿½ï¿½ï¿½ 'GREEN'
 ALTER TABLE SHOP ADD COLOR VARCHAR2(20) DEFAULT 'GREEN';
--- 3¹øÀº PINK·Î ¼öÁ¤, 5¹øÀº YELLOW·Î ¼öÁ¤
+-- 3ï¿½ï¿½ï¿½ï¿½ PINKï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, 5ï¿½ï¿½ï¿½ï¿½ YELLOWï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 UPDATE SHOP SET COLOR = 'PINK' WHERE NUM = 3;
 UPDATE SHOP SET COLOR = 'YELLOW' WHERE NUM = 5;
--- µ¥ÀÌÅÍ Ãß°¡: Áßº¹µÈ »óÇ°¸íµµ ³Ö¾îº¸¼¼¿ä
-INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, '¸é¹ÙÁö', 3, 15500, SYSDATE, 'ORANGE');
-INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, 'Åë¹ÙÁö', 3, 21000, SYSDATE, 'BLACK');
-INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, '¹Ý¹ÙÁö', 3, 12000, SYSDATE, 'KARKI');
-INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, '¹Ý¹ÙÁö', 3, 12000, SYSDATE, 'GRAY');
-INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, '°ã¹ÙÁö', 3, 33000, SYSDATE, 'BLACK');
+-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½: ï¿½ßºï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾îº¸ï¿½ï¿½ï¿½ï¿½
+INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, 'ï¿½ï¿½ï¿½ï¿½ï¿½', 3, 15500, SYSDATE, 'ORANGE');
+INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, 'ï¿½ï¿½ï¿½ï¿½ï¿½', 3, 21000, SYSDATE, 'BLACK');
+INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, 'ï¿½Ý¹ï¿½ï¿½ï¿½', 3, 12000, SYSDATE, 'KARKI');
+INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, 'ï¿½Ý¹ï¿½ï¿½ï¿½', 3, 12000, SYSDATE, 'GRAY');
+INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, 'ï¿½ï¿½ï¿½ï¿½ï¿½', 3, 33000, SYSDATE, 'BLACK');
 COMMIT;
 
 /*
-    FOR ¹Ýº¹¹®
-    FOR º¯¼ö¸í IN [REVERSE] ½ÃÀÛ°ª..ÃÖÁ¾°ª LOOP
-        ¹®Àåµé;
+    FOR ï¿½Ýºï¿½ï¿½ï¿½
+    FOR ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ IN [REVERSE] ï¿½ï¿½ï¿½Û°ï¿½..ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ LOOP
+        ï¿½ï¿½ï¿½ï¿½ï¿½;
     END LOOP;
 */
 
@@ -235,18 +237,18 @@ DECLARE
     V_BDAN NUMBER(5) := '&K_BDAN';
     V_NUM NUMBER(2);
 BEGIN
-    DBMS_OUTPUT.PUT_LINE(V_BDAN||'´Ü');
+    DBMS_OUTPUT.PUT_LINE(V_BDAN||'ï¿½ï¿½');
     FOR V_NUM IN 1..9 LOOP
         DBMS_OUTPUT.PUT_LINE(V_BDAN||' X '||V_NUM||' = '||V_BDAN * V_NUM);
     END LOOP;
 END;
 /
 
--- DBÀÇ Å¸ÀÔÀ» Àû¿ëÇÏ´Â ¹æ¹ý
--- DBÀÇ µ¥ÀÌÅÍ¸¦ ·¹Å©µå ´ÜÀ§·Î °¡Á®¿À´Â ¹æ¹ý
+-- DBï¿½ï¿½ Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½
+-- DBï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½Å©ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 DECLARE
-    V_SANG SHOP.SANGPUM%TYPE := 'Ã»¹ÙÁö'; -- DBÀÇ SANGPUM Å¸ÀÔÀ» Àû¿ë
-    V_SHOP ANGEL.SHOP%ROWTYPE; -- ·¹ÄÚµå´ÜÀ§·Î µ¥ÀÌÅÍ¸¦ ÀÐÀÌ À§ÇÑ ¼±¾ð
+    V_SANG SHOP.SANGPUM%TYPE := 'Ã»ï¿½ï¿½ï¿½ï¿½'; -- DBï¿½ï¿½ SANGPUM Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    V_SHOP ANGEL.SHOP%ROWTYPE; -- ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     
 BEGIN
     SELECT * 
@@ -254,24 +256,24 @@ BEGIN
     FROM SHOP
     WHERE SANGPUM = V_SANG;
     
-    DBMS_OUTPUT.PUT_LINE('»óÇ°¸í: '||V_SHOP.SANGPUM);
-    DBMS_OUTPUT.PUT_LINE('»ö »ó: '||V_SHOP.COLOR);
-    DBMS_OUTPUT.PUT_LINE('¼ö ·®: '||V_SHOP.SU);
-    DBMS_OUTPUT.PUT_LINE('´Ü °¡: '||V_SHOP.DAN);
-    DBMS_OUTPUT.PUT_LINE('±¸ÀÔÀÏ: '||V_SHOP.TODAY);
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½Ç°ï¿½ï¿½: '||V_SHOP.SANGPUM);
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ ï¿½ï¿½: '||V_SHOP.COLOR);
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ ï¿½ï¿½: '||V_SHOP.SU);
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ ï¿½ï¿½: '||V_SHOP.DAN);
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: '||V_SHOP.TODAY);
 END;
 /
 
 /*
-    ¿©·¯ ·¹ÄÚµå Á¶È¸½Ã
-    CURSOR Ä¿¼­¸í
+    ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Úµï¿½ ï¿½ï¿½È¸ï¿½ï¿½
+    CURSOR Ä¿ï¿½ï¿½ï¿½ï¿½
     IS
-    SELECT ¹®Àå; --SELECT Á¶È¸ÀÇ °á°ú¸¦ CURSOR¿¡ ÀúÀå
+    SELECT ï¿½ï¿½ï¿½ï¿½; --SELECT ï¿½ï¿½È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ CURSORï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     
-    FOR ·¹ÄÚµå¸í IN Ä¿¼­¸í
+    FOR ï¿½ï¿½ï¿½Úµï¿½ï¿½ IN Ä¿ï¿½ï¿½ï¿½ï¿½
 */
 
--- SHOP ÀüÃ¼ µ¥ÀÌÅÍ Ãâ·Â
+-- SHOP ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 DECLARE
     CURSOR S1
     IS
@@ -279,35 +281,35 @@ DECLARE
     
     V_CNT NUMBER(5);
 BEGIN
-    DBMS_OUTPUT.PUT_LINE('¹øÈ£    »óÇ°¸í    »ö»ó   ¼ö·®   ´Ü°¡    ±¸ÀÔÀÏ');
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½È£    ï¿½ï¿½Ç°ï¿½ï¿½    ï¿½ï¿½ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½   ï¿½Ü°ï¿½    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
     FOR S IN S1 LOOP
         DBMS_OUTPUT.PUT_LINE(S.NUM||'   '||S.SANGPUM||'   '||S.COLOR||'   '||
             S.SU||'   '||S.DAN||'   '||S.TODAY);
     END LOOP;
     
     SELECT COUNT(*) INTO V_CNT FROM SHOP;
-    DBMS_OUTPUT.PUT_LINE('ÃÑ '||V_CNT||'°³ÀÇ »óÇ°ÀÌ ÀÖ½À´Ï´Ù');
+    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ '||V_CNT||'ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½');
 END;
 /
 
 /*
-    Å°º¸µå·Î »óÇ°¸í ÀÏºÎ¸¦ ÀÔ·Â¹Þ¾Æ ÇØ´ç »óÇ°µéÀ» Ãâ·ÂÇÏ½Ã¿À
+    Å°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½ÏºÎ¸ï¿½ ï¿½Ô·Â¹Þ¾ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï½Ã¿ï¿½
     
-    ¸¸¾à »óÇ°¸íÀ» '¹ÙÁö' ¶ó°í ÀÔ·Â½Ã 
-    ÃÑ N°³ÀÇ »óÇ°ÀÌ ÀÖ½À´Ï´Ù
+    ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ 'ï¿½ï¿½ï¿½ï¿½' ï¿½ï¿½ï¿½ ï¿½Ô·Â½ï¿½ 
+    ï¿½ï¿½ Nï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½
     
-    »óÇ°¸í: Ã»¹ÙÁö
-    »ö»ó: YELLOW
-    ´Ü°¡: 23000
+    ï¿½ï¿½Ç°ï¿½ï¿½: Ã»ï¿½ï¿½ï¿½ï¿½
+    ï¿½ï¿½ï¿½ï¿½: YELLOW
+    ï¿½Ü°ï¿½: 23000
     
-    »óÇ°¸í: ¹Ý¹ÙÁö
-    »ö»ó: GRAY
-    ´Ü°¡: 15000
+    ï¿½ï¿½Ç°ï¿½ï¿½: ï¿½Ý¹ï¿½ï¿½ï¿½
+    ï¿½ï¿½ï¿½ï¿½: GRAY
+    ï¿½Ü°ï¿½: 15000
     .
     .
-    ¸¸¾à ¾øÀ» °æ¿ì ¹ÙÁö »óÇ°Àº ¸ñ·Ï¿¡ ¾ø½À´Ï´Ù ·Î Ãâ·Â
+    ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½
 */
-ACCEPT K_PRODUCT PROMPT 'Ã£À¸·Á´Â »óÇ°¸íÀÇ ÀÏºÎ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä';
+ACCEPT K_PRODUCT PROMPT 'Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ ï¿½ÏºÎ¸ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½';
 DECLARE
     V_PRODUCT VARCHAR(30) := '&K_PRODUCT';
     CURSOR S2
@@ -318,13 +320,13 @@ DECLARE
 BEGIN
     SELECT COUNT(*) INTO V_COUNT FROM SHOP WHERE SANGPUM LIKE '%'||V_PRODUCT||'%';
     IF V_COUNT = 0 THEN
-        DBMS_OUTPUT.PUT_LINE(V_PRODUCT||'°ú °ü·ÃµÈ »óÇ°ÀÌ ¾ø½À´Ï´Ù');
+        DBMS_OUTPUT.PUT_LINE(V_PRODUCT||'ï¿½ï¿½ ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½');
     ELSE
-        DBMS_OUTPUT.PUT_LINE(V_COUNT||'°³°¡ ÀÖ½À´Ï´Ù');
+        DBMS_OUTPUT.PUT_LINE(V_COUNT||'ï¿½ï¿½ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½');
         FOR S IN S2 LOOP
-            DBMS_OUTPUT.PUT_LINE('»óÇ°¸í: '||S.SANGPUM);
-            DBMS_OUTPUT.PUT_LINE('»ö »ó: '||S.COLOR);
-            DBMS_OUTPUT.PUT_LINE('´Ü °¡: '||S.DAN);
+            DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½Ç°ï¿½ï¿½: '||S.SANGPUM);
+            DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ ï¿½ï¿½: '||S.COLOR);
+            DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ ï¿½ï¿½: '||S.DAN);
             DBMS_OUTPUT.PUT_LINE('-------------');
         END LOOP;
     END IF; 
@@ -338,23 +340,23 @@ CREATE [OR REPLACE]
 
 */
 
--- »õ·Î¿î ÇÁ·Î½ÃÁ® »ý¼º
+-- ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½Î½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 CREATE OR REPLACE PROCEDURE MYTEST
 IS
 BEGIN
-    DBMS_OUTPUT.PUT_LINE('Ã¹ ÇÁ·Î½ÃÁ® »ý¼º!!');
+    DBMS_OUTPUT.PUT_LINE('Ã¹ ï¿½ï¿½ï¿½Î½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½!!');
 END;
 /
 
--- MYTEST ÇÁ·Î½ÃÁ® È£Ãâ
+-- MYTEST ï¿½ï¿½ï¿½Î½ï¿½ï¿½ï¿½ È£ï¿½ï¿½
 EXEC MYTEST;
 
--- ±¸±¸´ÜÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î½ÃÀú »ý¼º
+-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Î½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 CREATE OR REPLACE PROCEDURE GUGU(DAN NUMBER)
 IS
 BEGIN
     IF DAN < 2 OR DAN > 9 THEN
-        DBMS_OUTPUT.PUT_LINE('¹üÀ§ ¹þ¾î³²');
+        DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½î³²');
     ELSE
         DBMS_OUTPUT.PUT_LINE(' ** '||DAN||' ** ');
         DBMS_OUTPUT.PUT_LINE('  ');
@@ -365,31 +367,31 @@ BEGIN
 END;
 /
 
--- GUGU ½ÇÇà
+-- GUGU ï¿½ï¿½ï¿½ï¿½
 EXEC GUGU(5);
 
--- shop¿¡ »óÇ°À» Ãß°¡ÇÏ´Â ÇÁ·Î½ÃÀú
+-- shopï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Î½ï¿½ï¿½ï¿½
 CREATE OR REPLACE PROCEDURE ADDSHOP (
     SANGPUM SHOP.SANGPUM%TYPE, SU SHOP.SU%TYPE,
     DAN SHOP.DAN%TYPE, COLOR SHOP.COLOR%TYPE
 )
 IS
 BEGIN
-    DBMS_OUTPUT.PUT_LINE('SHOP DB ¿¡ '||SANGPUM||' µ¥ÀÌÅÍ¸¦ Ãß°¡ÇÕ´Ï´Ù');
+    DBMS_OUTPUT.PUT_LINE('SHOP DB ï¿½ï¿½ '||SANGPUM||' ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ß°ï¿½ï¿½Õ´Ï´ï¿½');
     INSERT INTO SHOP VALUES (SEQ_TEST.NEXTVAL, SANGPUM, SU, DAN, SYSDATE, COLOR);
-    DBMS_OUTPUT.PUT_LINE(SQL%ROWCOUNT||'°³ÀÇ »óÇ°ÀÌ Ãß°¡µÇ¾ú½À´Ï´Ù');
+    DBMS_OUTPUT.PUT_LINE(SQL%ROWCOUNT||'ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½');
 END;
 /
 
--- »óÇ°Ãß°¡
-EXEC ADDSHOP('¸ð¹ÙÁö', 1, 200000, 'WHITE');
+-- ï¿½ï¿½Ç°ï¿½ß°ï¿½
+EXEC ADDSHOP('ï¿½ï¿½ï¿½ï¿½ï¿½', 1, 200000, 'WHITE');
 
 /*
-    EXEC SERCHSANGPUM('¸é¹ÙÁö');
+    EXEC SERCHSANGPUM('ï¿½ï¿½ï¿½ï¿½ï¿½');
     
-    »óÇ°¸í »ö»ó ´Ü°¡
+    ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ü°ï¿½
 */
---ACCEPT K_PS PROMPT '°Ë»öÇÒ ´Ü¾î ÀÔ·Â';
+--ACCEPT K_PS PROMPT 'ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½Ü¾ï¿½ ï¿½Ô·ï¿½';
 CREATE OR REPLACE PROCEDURE SERCHSANGPUM (
     V_SANG SHOP.SANGPUM%TYPE
 )
@@ -403,16 +405,16 @@ BEGIN
     FROM SHOP WHERE SANGPUM LIKE '%'||V_SANG||'%';
     
     IF V_COUNT = 0 THEN
-        DBMS_OUTPUT.PUT_LINE(V_SANG||' °ü·Ã »óÇ°Àº ¾ø½À´Ï´Ù');
+        DBMS_OUTPUT.PUT_LINE(V_SANG||' ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½');
     ELSE
         FOR S IN S3 LOOP
-            DBMS_OUTPUT.PUT_LINE('»óÇ°¸í: '||S.SANGPUM);
-            DBMS_OUTPUT.PUT_LINE('»ö »ó: '||S.COLOR);
-            DBMS_OUTPUT.PUT_LINE('´Ü °¡: '||S.DAN);
+            DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½Ç°ï¿½ï¿½: '||S.SANGPUM);
+            DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ ï¿½ï¿½: '||S.COLOR);
+            DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ ï¿½ï¿½: '||S.DAN);
             DBMS_OUTPUT.PUT_LINE('-------------');
         END LOOP;
     END IF;
 END;
 /
 
-EXEC SERCHSANGPUM('¹ÙÁö');
+EXEC SERCHSANGPUM('ï¿½ï¿½ï¿½ï¿½');
