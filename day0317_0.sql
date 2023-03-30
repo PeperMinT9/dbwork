@@ -131,3 +131,7 @@ select *, (java + spring) as sum, ((java + spring) / 2) as avg from bitcamp WHER
 select * from bitcamp WHERE (java + spring) > (SELECT (AVG(java) + AVG(spring)) from bitcamp);
 -- select ROUND(AVG(java), 1) as javaScore, ROUND(AVG(spring), 1) as springScore from bitcamp WHERE (java + spring) > (SELECT (AVG(java) + AVG(spring)) from bitcamp);
 SELECT (AVG(java) + AVG(spring)) from bitcamp;
+
+select gender, count(*) as count, round(avg(score), 1) as avg from sawon group by gender;
+select buseo, count(*) as count, round(avg(score), 1) as avg from sawon group by buseo;
+select * from sawon;
